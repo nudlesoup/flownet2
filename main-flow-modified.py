@@ -341,7 +341,7 @@ if __name__ == '__main__':
         model.eval()
 
         if args.save_flow or args.render_validation:
-            flow_folder = "{}/opticalflow".format(args.inference_dir)
+            flow_folder = "{}/opticalflow_front".format(args.inference_dir)
             if not os.path.exists(flow_folder):
                 os.makedirs(flow_folder)
 
